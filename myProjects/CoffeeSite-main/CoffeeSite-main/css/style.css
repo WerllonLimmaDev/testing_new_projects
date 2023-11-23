@@ -1,0 +1,264 @@
+/* confg. do site inteiro */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+/*_________________ Cabeçario _________________*/
+.header{
+    width: 100%;
+    height: 62vh;
+    margin: 0%;
+    background-color: #FAD1CC;
+}
+
+.menu{
+    background-color: #fadfdb ;
+    font-family:'Roboto';
+    font-size: 1.5rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* estilização de cada link */
+.menu a {
+    padding: 1%;
+    text-decoration: none;
+    color: #3f2c13;
+    
+}
+
+/* interlação do mause com o menu */
+.menu a:hover{
+    color: #f1b0a8;
+}
+
+/* imagem do nome */
+.name{
+    width:100%;
+    height: 600px;
+    margin: 0%;
+    background-image: url(/img/header.png);  
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+
+/* _______________Escolha de café _____________*/
+
+#escolha{
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF2F2;
+    box-sizing: border-box;
+   
+}
+
+.nomeEscolha{
+    background-image: url(/img/coffee.png);
+    width: 180px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.alinhar2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.cafe1{
+    background-image: url(/img/cafe1.png);
+    width:360px ;
+    height:400px ;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    }
+
+.cafe2{
+    background-image: url(/img/cafe2.png);
+    width:360px ;
+    height:400px ;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    }
+
+.cafe3{
+    background-image: url(/img/cafe3.png);
+    width:360px ;
+    height:400px ;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    }
+
+.cafe4{
+    background-image: url(/img/cafe4.png);
+    width:360px ;
+    height:400px ;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+     }
+
+a:hover .cafe1{
+  opacity: 1;
+  
+}
+
+a:hover .cafe2{
+    opacity: 1;
+}
+
+a:hover .cafe3{
+    opacity: 1;
+}
+
+a:hover .cafe4{
+    opacity: 1;
+}
+
+     
+/*________Frase café _______ */
+
+.fraseDoDia{
+    width: 100%;
+    height: 50vh; 
+    background-color: #B75D56;
+}
+
+.quote{
+    background-image: url(/img/quote.png);
+    background-size: cover,contain;
+    width: 100%;
+    height: 50vh;
+    opacity: 0;
+    transition: .5s ease;
+
+} 
+
+.fraseDoDia:hover .quote{
+    opacity: 1;
+}
+
+
+
+/* _______________HIstória do café____________ */
+#history{
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF2F2;
+   padding-top: 15px;
+}
+
+
+
+.nomeCafeP{
+    background-image: url(/img/coffee\ history.png);
+    width: 360px;
+    height: 134px;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    margin: 0 auto 0 auto;
+  
+}
+
+video{
+    width: 960px;
+    height: 540px;
+}
+
+/* ____________end___________ */
+
+.end{
+    width: 100%;
+    height: 20vh;
+    background-color: #2e110a;
+}
+
+.alinhar3{
+display: flex;
+justify-content: center;
+padding-top: 35px;
+gap: 20px;
+}
+
+.linkedin{
+    background-image: url(/img/linkedin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+}
+
+.logo{
+    background-image: url(/img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 100px;
+}
+
+.gitHub{
+    background-image: url(/img/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+}
+
+
+/* ______________________Responsividade____________________ */
+
+
+/* MAX LIMITAR TAMANHO MÁXIMO */
+/* MIN LIMITAR O MINIMO */
+@media (max-width: 426px){
+
+    /* Cabeçario */
+    .header{height: 200px;}
+    .name{width: 425px; background-image: url(/img/header-2.png);}
+  
+
+
+    /* escolha do café */
+    #escolha{height: 75vh;}
+    .nomeEscolha{padding-top: 20%; width: 120px; height: 120px;}
+    .alinhar2{ gap: 20px;justify-content: center; margin-left: 9px; padding-top: 0px;}
+    .cafe1{width: 165px; height: 165px; opacity: 1;}
+    .cafe2{width: 165px; height: 165px;opacity: 1;}
+    .cafe3{width: 165px; height: 165px;opacity: 1;}
+    .cafe4{width: 165px; height: 165px;opacity: 1;}
+
+    /* frase café */
+    .fraseDoDia{width: 0px; height: 0px; }
+    .quote{width: 0px; height: 0px;}
+
+    /* Historia */
+    #history{height:400px ;}
+    .nomeCafeP{margin-top:2%;width: 200px; height: 70px;}
+    video{ width: 425px; height: 240px; }
+
+    /* footer */
+    .logo{width: 80px;height: 80px ;}
+    .linkedin{width: 70px;height: 70px ;}
+    .gitHub{width: 70px;height: 70px ;}
+}
